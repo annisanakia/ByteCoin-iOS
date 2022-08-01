@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct CoinData: Decodable {
+    let rate: Double
+    var last: String {
+        return String(format: "%.1f", rate)
+    }
+}
